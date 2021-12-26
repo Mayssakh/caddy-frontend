@@ -1,0 +1,37 @@
+
+<div class="container-fluid" style="padding: 0px;">
+ 
+    <div class="uk-inline" >
+
+        <img src="assets/img/ccc.jpg" alt="" style="width: 1349px;height: 1300px;">
+    
+        <div class="uk-overlay uk-position-center uk-light">
+
+        
+       
+                    <form #f=ngForm (ngSubmit)="produit(f)">
+                      <h1>Passer Commande</h1>
+                     <div class="mb-3 ">
+                    <label for="numero" class="form-label">numero</label>
+                    <input type="text" class="form-control" id="numero" name="numero" #numero="ngModel" [(ngModel)]="commande.numero">
+                    </div>
+                    <div class="mb-3">
+                    <label for="date" class="form-label">Date</label>
+                    <input type="date" class="form-control" id="date"  name="date" #date="ngModel" [(ngModel)]="commande.date">
+                    </div>
+                    <div class="mb-3">
+                    <label for="prixtotale" class="form-label">Prix Totale</label>
+                    <input type="text" class="form-control" id="prixtotal"  name="prixtotal" #prixtotal="ngModel" [(ngModel)]="commande.prixtotal">
+                    </div>
+                    <div class="mb-3">
+                    <label for="etat" class="form-label">Etat</label>
+                    <input type="text" class="form-control" id="etat"  name="etat" #etat="ngModel" [(ngModel)]="commande.etat">
+                    </div>
+                    
+                    
+
+                    <button type="button" class="btn btn-primary" >Passer la Commande </button>
+                    </form>
+</div>
+    </div>
+</div>

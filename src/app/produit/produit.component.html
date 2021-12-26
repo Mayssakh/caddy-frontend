@@ -1,0 +1,49 @@
+
+<div class="container-fluid" style="padding: 0px;">
+ 
+    <div class="uk-inline" >
+
+        <img src="assets/img/ccc.jpg" alt="" style="width: 1349px;height: 1300px;">
+    
+        <div class="uk-overlay uk-position-center uk-light">
+
+        
+       
+                    <form #f=ngForm (ngSubmit)="produits(f)">
+                      <h1>Ajouter Produit</h1>
+                     <div class="mb-3 ">
+                    <label for="code" class="form-label">Code</label>
+                    <input type="text" class="form-control" id="code" name="code" #code="ngModel" [(ngModel)]="produit.code">
+                    </div>
+                    <div class="mb-3">
+                    <label for="Marque" class="form-label">Marque</label>
+                    <input type="text" class="form-control" id="Marque" name="marque" #marque="ngModel" [(ngModel)]="produit.marque">
+                    </div>
+                    <div class="mb-3">
+                    <label for="modele" class="form-label">Modele</label>
+                    <input type="text" class="form-control" id="modele" name="modele" #modele="ngModel" [(ngModel)]="produit.modele">
+                    </div>
+                    <div class="mb-3">
+                    <label for="Caractéristique" class="form-label">Caractéristique</label>
+                    <input type="text" class="form-control" id="Caractéristique" name="caracteristique" #caracteristique="ngModel" [(ngModel)]="produit.caracteristique">
+                    </div>
+                    <div class="mb-3">
+                    <label for="prixunitaire" class="form-label">PrixUnitaire</label>
+                    <input type="text" class="form-control" id="prixunitaire" name="prixunitaire" #prixunitaire="ngModel" [(ngModel)]="produit.prixunitaire">
+                    </div>
+                    <div class="mb-3">
+                    <label for="quantite" class="form-label">Quantité</label>
+                    <input type="text" class="form-control" id="quantite" name="quantite" #quantite="ngModel" [(ngModel)]="produit.quantite">
+                    </div>
+                    <h3>Catégorie</h3>
+                    <div class="mb-3">
+                    <label for="libelle" class="form-label">Libelle</label>
+                    <input type="text" class="form-control" id="libelle" name="libelle" #libelle="ngModel" [(ngModel)]="produit.libelle">
+                    </div>
+                    
+
+                    <button type="button" class="btn btn-primary" (click)="ajouter()" >Ajouter produit </button>
+                    </form>
+</div>
+    </div>
+</div>

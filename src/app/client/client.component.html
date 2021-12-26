@@ -1,0 +1,63 @@
+
+<div class="container-fluid" style="padding: 0px;">
+ 
+    <div class="uk-inline" >
+
+        <img src="assets/img/aaa.jpg" alt="" style="width: 1349px;height: 1300px;">
+    
+        <div class="uk-overlay uk-position-center uk-light">
+
+        
+       
+                    <form #f=ngForm (ngSubmit)="home(f)">
+                      <h1>Ajouter Client</h1>
+                     <div class="mb-3 ">
+                    <label for="code" class="form-label">Code</label>
+                    <input type="text" class="form-control" id="code" name="code" #code="ngModel" [(ngModel)]="client.code">
+                    </div>
+                    <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" name="nom" id="nom" #nom="ngModel" [(ngModel)]="client.nom">
+                    </div>
+                    <div class="mb-3">
+                    <label for="prenom" class="form-label">Prenom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" #prenom="ngModel" [(ngModel)]="client.nom">
+                    </div>
+                    <div class="mb-3">
+                    <label for="date" class="form-label">DateNaissance</label>
+                    <input type="date" class="form-control" id="date" name="date" #date="ngModel" [(ngModel)]="client.datenaissance">
+                    </div>
+                    <div class="mb-3">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" name="adresse" #adresse="ngModel" [(ngModel)]="client.adresse">
+                    </div>
+                    <div class="mb-3">
+                    <label for="ville" class="form-label">Ville</label>
+                    <input type="text" class="form-control" id="ville" name="ville" #ville="ngModel" [(ngModel)]="client.ville">
+                    </div>
+                    <div class="mb-3">
+                    <label for="codepostal" class="form-label">CodePostal</label>
+                    <input type="text" class="form-control" id="codepostal" name="codepostal" #codepostal="ngModel" [(ngModel)]="client.codepostal">
+                    </div>
+                    <div class="mb-3">
+                    <label for="tel" class="form-label">Tel</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" #tel="ngModel" [(ngModel)]="client.tel">
+                    </div>
+                    <div class="mb-3">
+                    <label for="fax" class="form-label">Fax</label>
+                    <input type="text" class="form-control" id="fax" name="fax" #fax="ngModel" [(ngModel)]="client.fax">
+                    </div>
+                    <div class="mb-3 translate-top">
+                    <label for="gsm" class="form-label">Gsm</label>
+                    <input type="text" class="form-control" id="gsm" name="gsm" #gsm="ngModel" [(ngModel)]="client.gsm">
+                    </div>
+                        <div class="mb-3">
+                    <label for="Email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Email" name="email" #email="ngModel" [(ngModel)]="client.email">
+                        </div>
+
+                    <button type="button" class="btn btn-primary" (click)="ajouter()">Ajouter Client </button>
+                    </form>
+</div>
+    </div>
+</div>

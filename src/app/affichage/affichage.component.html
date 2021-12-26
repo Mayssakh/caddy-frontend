@@ -1,0 +1,49 @@
+<div class="container-fluid" style="padding: 0px;">
+ 
+    <div class="uk-inline" >
+
+        <img src="assets/img/ccc.jpg" alt="" style="width: 1349px;height: 1300px;">
+    
+        <div class="uk-overlay uk-position-center uk-light">
+            <table   class="table-bordered" WIDTH="100%"   CELLPADDING="6" CELLSPACING="4">
+                <thead >
+                  <tr>
+                    <th scope="col" colspan="4" style="text-align: center;">Prdouit</th>
+                    <th scope="col" colspan="4" style="text-align: center;">
+                <button class="uk-button uk-button-danger" (click)="add()">Add</button>
+                       </th>
+                    <th scope="col" colspan="4" style="text-align: center;">
+                <button class="uk-button uk-button-danger" (click)="update()">update</button>
+                    </th>
+                    <th scope="col" colspan="4" style="text-align: center;">
+                <button class="uk-button uk-button-danger" (click)="delete()">delete</button>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                         <tr>
+                          <th>code :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.code}}</td>
+                          <th>marque :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.marque}}</td>
+                          <th>modele :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.modele}}</td>
+                          <th>caracteristique :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.carateristique}}</td>
+                          <th>prixunitaire :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.prixunitaire}}</td>
+                          <th>quantite:</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.quantite}}</td>
+                          <th>libelle :</th>
+                          <td *ngFor="let item of affich" [ngValue]="item">{{item.libelle}}</td>
+                          </tr>
+               </tbody>
+            </table>
+            <br>
+            <button class="uk-button uk-button-danger" (click)="commande()">Passer Commande</button>
+
+           
+           
+</div>
+</div>
+</div>
